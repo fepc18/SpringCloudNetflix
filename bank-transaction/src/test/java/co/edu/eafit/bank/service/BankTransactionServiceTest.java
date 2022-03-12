@@ -269,8 +269,9 @@ public class BankTransactionServiceTest {
 			Double amount = 15000.0;
 			String userEmail = "vondrusek1@wisc.edu";
 			TransactionResultDTO transactionResultDTO = null;
+			String token="12346";
 
-			TransferDTO transferDTO = new TransferDTO(accoIdOrigin, accoIdDestination, amount, userEmail);
+			TransferDTO transferDTO = new TransferDTO(accoIdOrigin, accoIdDestination, amount, userEmail,token);
 
 			Account accountOrigin = AccountBuilder.getAccount();
 			accountOrigin.setAccoId(accoIdOrigin);
