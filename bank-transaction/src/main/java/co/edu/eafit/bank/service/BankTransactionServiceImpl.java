@@ -106,12 +106,12 @@ public class BankTransactionServiceImpl implements BankTransactionService {
 		Users user = userOptional.get();
 
 		//Se valida el token contra el servicio
-		OTPValidationResponse otpValidationResponse =
+		/*OTPValidationResponse otpValidationResponse =
 				validateToken(user.getUserEmail(), transferDTO.getToken());
 
 		if (otpValidationResponse == null || !otpValidationResponse.getValid()) {
 			throw new Exception("Not valid TOTP");
-		}
+		}*/
 
 
 		Transaction transaction = new Transaction();
